@@ -5,8 +5,6 @@ fetch(`js/items.json`)
     const protuct_div=document.getElementById("protuct_div");
     all_prodeut=data; 
     data.forEach(product => {
-        // const disc=Math.floor((product.old_price - product.price) / product.old_price *100)
-
         const product_old_price=product.old_price ? `<p class="old-price"><del>$${product.old_price}</del></p>`:"";
 
             const disc=product.old_price ?`<span class="sale-product">%${Math.floor((product.old_price - product.price) / product.old_price *100)}</span>`:""
@@ -23,7 +21,7 @@ fetch(`js/items.json`)
             <img class="img-hover" src="${product.img_hover}" alt="" />
             </div>
             <h3 class="name-product">
-            <a href="http://127.0.0.1:5500/protucts.html"
+            <a href="protucts.html"
                 >${product.name}</a
             >
             </h3>

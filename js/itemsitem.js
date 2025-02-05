@@ -25,7 +25,7 @@ fetch(`js/items.json`)
             <img class="img-hover" src="${product.img_hover}" alt="" />
             </div>
             <h3 class="name-product">
-            <a href="http://127.0.0.1:5500/protucts.html"
+            <a href="protucts.html"
                 >${product.name}</a
             >
             </h3>
@@ -47,6 +47,7 @@ fetch(`js/items.json`)
         }
         
     });
+
     data.forEach(product => {
             other_product_swiper.innerHTML +=`
                     <div class="product swiper-slide ">
@@ -60,7 +61,7 @@ fetch(`js/items.json`)
             <img class="img-hover" src="${product.img_hover}" alt="" />
             </div>
             <h3 class="name-product">
-            <a href="http://127.0.0.1:5500/protucts.html"
+            <a href="protucts.html"
                 >${product.name}</a
             >
             </h3>
@@ -94,7 +95,7 @@ fetch(`js/items.json`)
         <img class="img-hover" src="${product.img_hover}" alt="" />
         </div>
         <h3 class="name-product">
-        <a href="http://127.0.0.1:5500/protucts.html"
+        <a href="protucts.html"
             >${product.name}</a
         >
         </h3>
